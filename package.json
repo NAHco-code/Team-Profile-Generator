@@ -1,0 +1,22 @@
+{
+  "name": "teamprofile-generator",
+  "version": "1.0.0",
+  "description": "A node application that generates a team profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAHco-code/Team-Profile-Generator.git"
+  },
+  "author": "Kathryn Wilkinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NAHco-code/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/NAHco-code/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}

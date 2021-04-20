@@ -1,5 +1,6 @@
 const generateHTML = (data) => {
 
+    //* Use CSS framework to generate HTML //TODO: cite CSS framework used
     const generateManager = (emp) =>
       `<div class="ui card">
         <div class="content">

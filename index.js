@@ -1,7 +1,7 @@
 // set dependencies
-const inquirer = require('inquirer');
-const fs = require('fs');
-const util = require('util');
+const inquirer = require('inquirer'); //*prompt functionality
+const fs = require('fs'); //*access file system
+const util = require('util'); //*needed for promisify
 
 const generateHTML = require('./utils/generateHTML');
 

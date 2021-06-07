@@ -1,6 +1,9 @@
+
+//credit: semantic-ui framework
+
 const generateHTML = (data) => {
 
-    //* Use CSS framework to generate HTML //TODO: cite CSS framework used
+    //render Manager //pass employee argument into function
     const generateManager = (emp) =>
       `<div class="ui card">
         <div class="content">
@@ -31,6 +34,7 @@ const generateHTML = (data) => {
     </div>
     `;
 
+    //render
     const generateEmployees = (emps) => {
         let html = '';
 

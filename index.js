@@ -66,7 +66,7 @@ const addEmp = async () => {
     } catch (err) {
         console.error(err);
     } finally {
-        console.log('successful async switch');
+        console.log('Employee added to team');
     };
 }
 

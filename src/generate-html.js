@@ -81,16 +81,31 @@ const generateHTML = (data) => {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
-            <title>Document</title>
+            <title>Team Profile</title>
             <style></style>
         </head>
         <body>
-            <header class="ui top banner test ad" data-text="Employees"></header>
-            <div> ${generateManager(data[0])}</div>
-            <div> ${generateEmployees(data.slice(1))}</div>
+            <div class="pusher">
+                <header data-text="Employees">
+                    <div class="ui inverted vertical masthead center aligned segment">
+                        <div class="ui text container">
+                            <h1 class="ui inverted header">
+                                Team Profile
+                            </h1>
+                            <h2>Viewing Team Members</h2>
+                        </div>
+                    </div>
+                </header>
+                <br/>
+                <div class=" ui three column grid">
+                    <div> ${generateManager(data[0])}</div>
+                    <div> ${generateEmployees(data.slice(1))}</div>
+                </div>
+            </div>
         </body>
+        <footer>
+        </footer>
         </html>`
-
 };
 
 module.exports = generateHTML;

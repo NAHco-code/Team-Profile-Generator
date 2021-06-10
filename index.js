@@ -78,7 +78,7 @@ const init = async () => {
         await console.log(manager);
         await team.push(manager);
         await addEmp();
-        await writeFileAsync('teamprofile.html', generateHTML(team));
+        await writeFileAsync('./dist/teamprofile.html', generateHTML(team));
         await console.log('Successfully wrote to teamprofile.html');
     } catch (err) {
         await console.error(err);

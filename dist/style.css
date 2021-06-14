@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(237, 243, 243) !important;
+}
+
+.header {
+    line-height: .2em !important;
+}
+#center {
+    display: flex;
+    justify-content: center;
+}
+.card-body {
+    background-color: white !important;
+}
+.card-header {
+    background-color: rgb(13, 255, 255) !important;
+}
+.card-content {
+    box-shadow: 1px 1px 2px 1px rgba(121, 18, 52, 0.486) !important;
+    border-radius: 5px;
+}
+.event {
+    padding: 5px !important;
+}
+.top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.gray {
+    background-color: rgb(241, 239, 239) !important;
+}
+.white {
+    background-color: white !important;
+    /* border-top-: !important;
+    border-bottom: !important; */
+}
+a {
+    color: rgb(119, 118, 118) !important;
+}
+a:hover {
+    color: rgb(2, 150, 150) !important;
+}

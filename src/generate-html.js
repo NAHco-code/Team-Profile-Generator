@@ -3,77 +3,103 @@
 
 const generateHTML = (data) => {
 
-    //render Manager //pass employee argument into function
     const generateManager = (emp) =>
-      `<div class="ui fluid card">
-        <div class="content">
-            <div class="header">${emp.name}</div>
-        </div>
-        <div class="content">
-            <h4 class="ui sub header">${emp.getRole()}</h4>
-            <div class="ui small feed">
-                <div class="event">
-                    <div class="content">
-                        <div class="summary">
-                            <a href="mailto: ${emp.email}">${emp.email}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="content">
-                        <div class="summary">
-                            <a>${emp.name}</a> was added as an <a>${emp.getRole()}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="extra content">
-
-        </div>
-    </div>
-    `;
-
-    //render
-    const generateEmployees = (emps) => {
-        let html = '';
-
-        for (let i = 0; i < emps.length; i++) {
-            html +=
-            `<div class="ui fluid card">
+        `<div>
+            <div class="ui fluid card">
                 <div class="content">
-                    <div class="header">${emps[i].name}</div>
+                    <div class="header">${emp.name}</div>
+                    <h4 class="ui sub header">${emp.getRole()}</h4>
                 </div>
                 <div class="content">
-                    <h4 class="ui sub header">${emps[i].getRole()}</h4>
                     <div class="ui small feed">
                         <div class="event">
                             <div class="content">
                                 <div class="summary">
-                                    <a href="mailto: ${emps[i].email}">${emps[i].email}</a>
+                                    <span>ID: ${emp.ID}</span>
                                 </div>
                             </div>
                         </div>
                         <div class="event">
                             <div class="content">
                                 <div class="summary">
-                                    <a>${emps[i].name}</a> was added as an <a>${emps[i].getRole()}</a>
+                                    <span>Email: </span>
+                                    <a href="mailto: ${emp.email }">${ emp.email}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="content">
+                                <div class="summary">
+                                    <span>Office: ${emp.officeNumber}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="extra content">
+                <div class="extra content"></div>
+            </div>
+        </div>
+    `;
 
+    const generateEmployees = (emps) => {
+        let html = '';
+        let engineerHTML =
+            `<span>Github: <a href="https://github.com/${ emps[ i ].github }">${ emps[ i ].github }</a></span>`;
+        let internHTML = `<span>School: ${ emps[ i ].school }</span>`;
+
+        function renderCorrespondingLine () {
+            if ( emps[ i ].getRole() === "Engineer" ) {
+                return engineerHTML;
+            }
+            else {
+                return internHTML;
+            }
+        }
+
+        for (let i = 0; i < emps.length; i++) {
+            html +=
+            `<div>
+                <div class="ui fluid card">
+                    <div class="content">
+                        <div class="header">${emps[ i ].name}</div>
+                        <h4 class="ui sub header">${emps[ i ].getRole()}</h4>
+                    </div>
+                    <div class="content">
+                        <div class="ui small feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <span>ID: ${emps[i].ID}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <span>Email: </span>
+                                        <a href="mailto: ${emps[ i ].email }">${ emps[ i ].email}</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        ${renderCorrespondingLine}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content"></div>
                 </div>
             </div>
+
             `
         }
 
         return html;
     }
 
-//TODO: must loop through an array for each employee and generate a card for each of them
     return `
         <!DOCTYPE html>
         <html lang="en">
@@ -81,6 +107,7 @@ const generateHTML = (data) => {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+            <link rel="stylesheet" href="style.css">
             <title>Team Profile</title>
             <style></style>
         </head>
@@ -98,8 +125,8 @@ const generateHTML = (data) => {
                 </header>
                 <br/>
                 <div class=" ui three column grid">
-                    <div> ${generateManager(data[0])}</div>
-                    <div> ${generateEmployees(data.slice(1))}</div>
+                    ${generateManager(data[0])}
+                    ${generateEmployees(data.slice(1))}
                 </div>
             </div>
         </body>

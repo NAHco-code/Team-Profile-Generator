@@ -4,16 +4,17 @@
 const generateHTML = (data) => {
 
     const generateManager = ( emp ) =>
-        `<div>
+        `
+        <div>
             <div class="ui fluid card card-body">
                 <div class="content card-header">
                     <div class="header">${ emp.name }</div>
                     <h4 class="ui sub header">${ emp.getRole() }</h4>
                 </div>
                 <div class="content">
-                    <div class="ui small feed">
+                    <div class="ui small feed card-content">
                         <div class="event gray top">
-                            <div class="content card-content">
+                            <div class="content">
                                 <div class="summary">
                                     <span>ID: ${ emp.ID }</span>
                                 </div>
@@ -38,7 +39,8 @@ const generateHTML = (data) => {
                 </div>
                 <div class="extra content card-footer"><img class="badge" src="./icons/team-manager.png"/></div>
             </div>
-        </div>`;
+        </div>
+        `;
 
 
     const generateEmployees = (emps) => {
@@ -63,7 +65,8 @@ const generateHTML = (data) => {
         // }
 
         for (let i = 0; i < emps.length; i++) {
-            html += `<div>
+            html += `
+            <div>
                 <div class="ui fluid card card-body">
                     <div class="content card-header">
                         <div class="header">${emps[ i ].name}</div>
@@ -99,7 +102,8 @@ const generateHTML = (data) => {
 
                     </div>
                 </div>
-            </div>`
+            </div>
+            `
         }
 
         return html;

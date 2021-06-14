@@ -1,9 +1,32 @@
 body {
     background-color: rgb(237, 243, 243) !important;
 }
-
-.header {
-    line-height: .2em !important;
+header-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+}
+.page-header {
+    padding-top: 30px !important;
+}
+.header-font {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 40px !important;
+}
+.page-sub-header {
+    background-color: rgba(105, 129, 129, 0.603);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 46px;
+    padding: 10px;
+}
+.sub-header-font {
+    color:rgb(241, 236, 220);
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16px;
+    font-weight: 300;
 }
 #center {
     display: flex;
@@ -13,10 +36,19 @@ body {
     background-color: white !important;
 }
 .card-header {
-    background-color: rgb(13, 255, 255) !important;
+    background-color: rgb(31, 194, 186) !important;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    line-height: .2em !important;
+}
+h3 {
+    display: flex;
+    height: auto;
 }
 .card-content {
-    box-shadow: 1px 1px 2px 1px rgba(121, 18, 52, 0.486) !important;
+    box-shadow: 1px 1px 2px 1px rgba(75, 10, 32, 0.486) !important;
     border-radius: 5px;
 }
 .event {
@@ -43,4 +75,14 @@ a {
 }
 a:hover {
     color: rgb(2, 150, 150) !important;
+}
+.card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px !important;
+}
+.badge {
+    width: 40px;
+    height: 40px;
+    display: flex;
 }

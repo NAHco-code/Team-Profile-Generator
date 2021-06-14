@@ -35,9 +35,9 @@ const engQuestions = [
 ];
 const intQuestions = [
     { type: 'input', name: 'name', message: 'Intern name?' },
-    { type: 'input', name: 'ID', message: 'Please enter employee ID number of intern' },
-    { type: 'input', name: 'email', message: 'Please enter preferred email address of intern' },
-    { type: 'input', name: 'school', message: 'Please enter github username of intern' }
+    { type: 'input', name: 'ID', message: 'Please enter employee ID number of intern:' },
+    { type: 'input', name: 'email', message: 'Please enter preferred email address of intern:' },
+    { type: 'input', name: 'school', message: 'Please enter intern`s associated school:' }
 ];
 
 const addEmp = async () => {

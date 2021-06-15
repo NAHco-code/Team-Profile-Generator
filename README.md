@@ -1,5 +1,7 @@
 # Team-Profile Generator
 
+![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)
+
 Command-line application that takes in information about employees on a software engineering team, then generates in HTML webpage that displays summaries for each person.
 
 ## Table of Contents
@@ -10,11 +12,11 @@ Command-line application that takes in information about employees on a software
 - [Tests](#tests)
 - [Contributing](#contributing)
 - [Visuals](#visuals)
-- [Contact Me](#contact-me)
+- [Contact Me](#questions)
+- [License](#license)
 
 ## Description
 
-Project in progress.
 Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Includes unit tests for each class.
 
 ## Installation
@@ -24,23 +26,23 @@ Navigate to the root folder in your command-line and run 'npm i' to install depe
 
 ## Usage
 
-After installation, run 'npm start' in the command-line to access the prompts and start the generator.
+After installation, run 'npm start' in the command-line to access the prompts and start the generator. Select 'complete' when all team members have been added and view your team profile in the dist folder.
 
 ## Tests
 
 Run 'npm jest' to test.
 
-## Contribute
+## Contributing
 
-If you have something you'd like to contribute, make a pull request!
+Sole Author: k.wilkinson
+
+This project was completed as an individual assignment for The Ohio State University Coding Boot Camp.
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 
 ## Visuals
 
-![screenshot]()
-
-![screenshot]()
+![screenshot](./assets/images/team-profile.PNG)
 
 [GithubRepo]()
 

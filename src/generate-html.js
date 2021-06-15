@@ -121,6 +121,8 @@ const generateHTML = (data) => {
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+                integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
             <link rel="stylesheet" href="style.css">
             <title>Team Profile</title>
         </head>
@@ -130,11 +132,11 @@ const generateHTML = (data) => {
                     <div class= "header-wrapper ui inverted vertical masthead center aligned segment">
                         <div class="ui text container page-header">
                             <h1 class="ui inverted header header-font">
-                                Team Profile
+                                TEAM PROFILE
                             </h1>
                         </div>
                         <div class="page-sub-header">
-                            <h2 class="sub-header-font"> Viewing Team Members </h2>
+                            <h2 class="sub-header-font"><i class="angle double down icon"></i> Viewing Team Members <i class="angle double down icon"></i></h2>
                         </div>
                     </div>
                 </header>
@@ -146,6 +148,32 @@ const generateHTML = (data) => {
                 </div>
             </div>
             <footer>
+                <div class="footer-wrapper-1">
+                    <div class="copyright footer-text">
+                        &copy; K WILKINSON 2021
+                    </div>
+                    <div class="term-of-use">
+                        <a href='#' class="footer-text">TERMS OF USE</a>
+                    </div>
+                    <div class="privacy-policy">
+                        <a href='#' class="footer-text">PRIVACY POLICY</a>
+                    </div>
+                    <div class="cookie-policy">
+                        <a href='#' class="footer-text">COOKIE POLICY</a>
+                    </div>
+                    <div class="contact">
+                        <a href='#' class="footer-text">CONTACT</a>
+                    </div>
+                </div>
+                <div class="footer-wrapper-2">
+                    <div class="follow footer-text">
+                        FOLLOW
+                    </div>
+                    <div class="icon-links">
+                        <a href='https://www.linkedin.com/in/kwilkinsonxx/'><i class="fab fa-linkedin-in symbol follow-link"></i></a>
+                        <a href='https://github.com/NAHco-code'><i class="fab fa-github symbol follow-link"></i></a>
+                    </div>
+                </div>
             </footer>
         </body>
         </html>`

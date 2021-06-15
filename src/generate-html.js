@@ -45,64 +45,67 @@ const generateHTML = (data) => {
 
     const generateEmployees = (emps) => {
         let html = '';
-        // const engineerHTML =
-        //     `<span>Github: <a href="https://github.com/${ emps[ i ].github }">${ emps[ i ].github }</a></span>`;
-        // const internHTML = `<span>School: ${ emps[ i ].school }</span>`;
+        // let engineerHTML = `<span>Github: <a href="https://github.com/${ emp.github }">${ emp.github }</a></span>`;
+        // let internHTML = `<span>School: ${ emp.school }</span>`;
 
-        // const renderCorrespondingLine = () => {
-        //     if ( emps[ i ].getRole() === "Engineer" ) {
-        //         return engineerHTML;
-        //     }
-        //     else {
-        //         return internHTML;
-        //     }
-        // }
+        const renderCorrespondingLine = ( emp ) => {
+            if ( emp.getRole() === 'Engineer' ) {
+                return `<span>Github: <a href="https://github.com/${ emp.github }">${ emp.github }</a></span>`;
+            } else {
+                return `<span>School: ${ emp.school }</span>`;
+            }
+        };
 
         // const engineerBadge = `<img class="badge" src="./icons/engineer.png" />`;
         // const internBadge = `<img class="badge" src="./icons/intern1.png" />`;
-        // const renderCorrespondingBadge = () => {
+        const renderCorrespondingBadge = ( emp ) => {
+            if ( emp.getRole() === 'Engineer' ) {
+                return `<img class="badge" src="./icons/engineer.png" />`;
+            } else {
+                return `<img class="badge" src="./icons/intern1.png" />`;
+            }
+        };
 
-        // }
 
         for (let i = 0; i < emps.length; i++) {
             html += `
-            <div>
-                <div class="ui fluid card card-body">
-                    <div class="content card-header">
-                        <div class="header">${emps[ i ].name}</div>
-                        <h4 class="ui sub header">${emps[ i ].getRole()}</h4>
-                    </div>
-                    <div class="content">
-                        <div class="ui small feed card-content">
-                            <div class="event gray top">
-                                <div class="content">
-                                    <div class="summary">
-                                        <span>ID: ${emps[i].ID}</span>
+                    <div>
+                        <div class="ui fluid card card-body">
+                            <div class="content card-header">
+                                <div class="header">${emps[ i ].name}</div>
+                                <h4 class="ui sub header">${emps[ i ].getRole()}</h4>
+                            </div>
+                            <div class="content">
+                                <div class="ui small feed card-content">
+                                    <div class="event gray top">
+                                        <div class="content">
+                                            <div class="summary">
+                                                <span>ID: ${emps[i].ID}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event white">
+                                        <div class="content">
+                                            <div class="summary">
+                                                <span>Email: </span>
+                                                <a href="mailto: ${emps[ i ].email }">${ emps[ i ].email}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event gray bottom">
+                                        <div class="content">
+                                            <div class="summary">
+                                                ${renderCorrespondingLine(emps[ i])}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="event white">
-                                <div class="content">
-                                    <div class="summary">
-                                        <span>Email: </span>
-                                        <a href="mailto: ${emps[ i ].email }">${ emps[ i ].email}</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="event gray bottom">
-                                <div class="content">
-                                    <div class="summary">
-
-                                    </div>
-                                </div>
+                            <div class="extra content card-footer">
+                                ${renderCorrespondingBadge( emps[ i ])}
                             </div>
                         </div>
                     </div>
-                    <div class="extra content">
-
-                    </div>
-                </div>
-            </div>
             `
         }
 
@@ -131,7 +134,7 @@ const generateHTML = (data) => {
                             </h1>
                         </div>
                         <div class="page-sub-header">
-                            <h2 class="sub-header-font">- Viewing Team Members -</h2>
+                            <h2 class="sub-header-font"> Viewing Team Members </h2>
                         </div>
                     </div>
                 </header>
@@ -142,9 +145,9 @@ const generateHTML = (data) => {
                     ${generateEmployees(data.slice(1))}
                 </div>
             </div>
+            <footer>
+            </footer>
         </body>
-        <footer>
-        </footer>
         </html>`
 };
 

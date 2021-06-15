@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/NAHco-code/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/NAHco-code/Team-Profile-Generator#readme",
+  "homepage": "https://github.com/NAHco-code/Team-Profile-Generator",
   "dependencies": {
     "inquirer": "^8.0.0",
     "semantic-ui-css": "^2.4.1"

@@ -30,7 +30,7 @@ After installation, run 'npm start' in the command-line to access the prompts an
 
 ## Tests
 
-Run 'npm jest' to test.
+Run 'npm test' to test.
 
 ## Contributing
 
@@ -42,10 +42,11 @@ This project was completed as an individual assignment for The Ohio State Univer
 
 ## Visuals
 
+[![DEMO](http://img.youtube.com/vi/sNGuD2T1TXc/0.jpg)](http://www.youtube.com/watch?v=sNGuD2T1TXc "")
+
 ![screenshot](./assets/images/team-profile.PNG)
 
-[GithubRepo]()
-
+[GithubRepo](https://github.com/NAHco-code/Team-Profile-Generator.git)
 
 ## Questions?
 

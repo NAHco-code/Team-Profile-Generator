@@ -62,6 +62,8 @@ body {
     background-color: white !important;
     display: flex;
     margin: 30px !important;
+    position: relative !important;
+    right: 30px !important;
 }
 .card-header {
     background-color: rgb(31, 194, 186) !important;

@@ -13,30 +13,30 @@ const team = []
 // write prompts //first prompts for manager information
 const initialPrompt = () => {
     return inquirer.prompt([
-        { type: 'input', name: 'name', message: 'What is your name?' },
-        { type: 'input', name: 'ID', message: 'Please enter your employee ID number' },
-        { type: 'input', name: 'email', message: 'Please enter your preferred email address' },
-        { type: 'input', name: 'officeNumber', message: 'Please enter your office number' }
+        { type: 'input', name: 'name', message: 'Please enter - name of team manager:' },
+        { type: 'input', name: 'ID', message: 'Please enter - employee ID number of team manager:' },
+        { type: 'input', name: 'email', message: 'Please enter - preferred email address of team manager:' },
+        { type: 'input', name: 'officeNumber', message: 'Please enter - office number of team manager:' }
     ]);
 };
 
 const empType = [
     {
-        type: 'list', name: 'role', message: 'Which kind of employee would you like to add?',
+        type: 'list', name: 'role', message: 'Would you like to add an Engineer or an Intern to the team?',
         choices: ['Engineer', 'Intern', 'Complete']
     }
 ];
 const engQuestions = [
-    { type: 'input', name: 'name', message: 'Engineer name?' },
-    { type: 'input', name: 'ID', message: 'Please enter employee ID number of engineer' },
-    { type: 'input', name: 'email', message: 'Please enter preferred email address of engineer' },
-    { type: 'input', name: 'github', message: 'Please enter github username of engineer' }
+    { type: 'input', name: 'name', message: 'Please enter - name of engineer:' },
+    { type: 'input', name: 'ID', message: 'Please enter - employee ID number of engineer:' },
+    { type: 'input', name: 'email', message: 'Please enter - preferred email address of engineer:' },
+    { type: 'input', name: 'github', message: 'Please enter - github username of engineer:' }
 ];
 const intQuestions = [
-    { type: 'input', name: 'name', message: 'Intern name?' },
-    { type: 'input', name: 'ID', message: 'Please enter employee ID number of intern:' },
-    { type: 'input', name: 'email', message: 'Please enter preferred email address of intern:' },
-    { type: 'input', name: 'school', message: 'Please enter intern`s associated school:' }
+    { type: 'input', name: 'name', message: 'Please enter - name of intern:' },
+    { type: 'input', name: 'ID', message: 'Please enter - employee ID number of intern:' },
+    { type: 'input', name: 'email', message: 'Please enter - preferred email address of intern:' },
+    { type: 'input', name: 'school', message: 'Please enter - intern`s associated school:' }
 ];
 
 const addEmp = async () => {
@@ -78,7 +78,8 @@ const init = async () => {
         await team.push(manager);
         await addEmp();
         await writeFileAsync('./dist/teamprofile.html', generateHTML(team));
-        await console.log('Successfully wrote to teamprofile.html');
+        await console.log( 'Successfully wrote to teamprofile.html' );
+        await console.log( 'Please navigate to the dist folder and open your new team profile in the browser to view' );
     } catch (err) {
         await console.error(err);
     }

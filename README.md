@@ -26,7 +26,7 @@ Navigate to the root folder in your command-line and run 'npm i' to install depe
 
 ## Usage
 
-After installation, run 'npm start' in the command-line to access the prompts and start the generator. Select 'complete' when all team members have been added and view your team profile in the dist folder.
+After installation, run 'npm start' in the command-line to access the prompts and start the generator. Based on the assumption that the Manager will be funning the application, when you're prompted to enter your name, the name that is entered will populate as the Manager. Select 'complete' when all team members have been added, then open your new teamprofile.html (located in the dist folder) in the browser.
 
 ## Tests
 

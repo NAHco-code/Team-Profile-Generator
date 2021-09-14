@@ -42,7 +42,7 @@ THEN I exit the application, and the HTML is generated
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
+![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./assets/images/10-object-oriented-programming-homework-demo.png)
 
 The styling in the image is just an example, so feel free to add your own.
 
@@ -59,15 +59,15 @@ node index.js
 It is recommended that you start with a directory structure that looks like the following example:
 
 ```md
-__tests__/			// jest tests
+__tests__/          // jest tests
   Employee.test.js
   Engineer.test.js
   Intern.test.js
   Manager.test.js
-dist/               // rendered output (HTML) and CSS style sheet
-lib/				// classes
-src/				// template helper code
-index.js			// runs the application
+dist/               // rendered output (HTML) and CSS stylesheet
+lib/                // classes
+src/                // template helper code
+index.js            // runs the application
 ```
 
 The application must include `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes (in the `_tests_` directory) must ALL pass.
@@ -140,9 +140,9 @@ This homework is graded based on the following criteria:
 
 * Satisfies all of the preceding acceptance criteria plus the following:
 
-	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
+  * Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-	* Uses the [Jest package](https://www.npmjs.com/package/jest) for a suite of unit tests.
+  * Uses the [Jest package](https://www.npmjs.com/package/jest) for a suite of unit tests.
 
   * The application must have `Employee`, `Manager`, `Engineer`, and `Intern` classes.
 

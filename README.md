@@ -17,7 +17,7 @@ Command-line application that takes in information about employees on a software
 
 ## Description
 
-Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Includes unit tests for each class.
+Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Includes unit tests for each class constructor.
 
 ## Installation
 
@@ -26,7 +26,7 @@ Navigate to the root folder in your command-line and run 'npm i' to install depe
 
 ## Usage
 
-After installation, run 'npm start' in the command-line to access the prompts and start the generator. Based on the assumption that the Manager will be funning the application, when you're prompted to enter your name, the name that is entered will populate as the Manager. Select 'complete' when all team members have been added, then open your new teamprofile.html (located in the dist folder) in the browser.
+After installation, run 'npm start' in the root folder to access the prompts and start the generator. Select 'complete' when all team members have been added, open the teamprofile.html file (located in the dist folder) in the browser to view your new team profile!
 
 ## Tests
 

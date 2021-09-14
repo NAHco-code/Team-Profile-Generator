@@ -46,14 +46,12 @@ const addEmp = async () => {
             case "Engineer":
                 answers = await inquirer.prompt(engQuestions);
                 const engineer = new Engineer(answers.name, answers.ID, answers.email, answers.github);
-                await console.log(engineer);
                 await team.push(engineer);
                 await addEmp();
                 break;
             case "Intern":
                 answers = await inquirer.prompt(intQuestions);
                 const intern = new Intern(answers.name, answers.ID, answers.email, answers.school);
-                await console.log(intern);
                 await team.push(intern);
                 await addEmp();
                 break;
@@ -65,7 +63,7 @@ const addEmp = async () => {
     } catch (err) {
         console.error(err);
     } finally {
-        console.log('Employee added to team');
+        console.log('Added Successfully');
     };
 }
 
@@ -79,11 +77,11 @@ const init = async () => {
         await addEmp();
         await writeFileAsync('./dist/teamprofile.html', generateHTML(team));
         await console.log( 'Successfully wrote to teamprofile.html' );
-        await console.log( 'Please navigate to the dist folder and open your new team profile in the browser to view' );
+        await console.log( 'Finished' );
     } catch (err) {
         await console.error(err);
     }
-    console.log("Finished");
+    console.log( 'Please navigate to the dist folder and open your new team profile in the browser to view' );
 };
 
 init();

@@ -1,7 +1,7 @@
 
 //credit: semantic-ui framework
 
-const generateHTML = (data) => {
+const generateHTML = ( data ) => {
 
     const generateManager = ( emp ) =>
         `
@@ -43,7 +43,7 @@ const generateHTML = (data) => {
         `;
 
 
-    const generateEmployees = (emps) => {
+    const generateEmployees = ( emps ) => {
         let html = '';
 
         const renderCorrespondingLine = ( emp ) => {
@@ -63,7 +63,7 @@ const generateHTML = (data) => {
         };
 
 
-        for (let i = 0; i < emps.length; i++) {
+        for ( let i = 0; i < emps.length; i++ ) {
             html += `
                     <div>
                         <div class="ui fluid card card-body">
@@ -76,7 +76,7 @@ const generateHTML = (data) => {
                                     <div class="event gray top">
                                         <div class="content">
                                             <div class="summary">
-                                                <span>ID: ${emps[i].ID}</span>
+                                                <span>ID: ${emps[ i ].ID}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@ const generateHTML = (data) => {
                                     <div class="event gray bottom">
                                         <div class="content">
                                             <div class="summary">
-                                                ${renderCorrespondingLine(emps[ i])}
+                                                ${renderCorrespondingLine(emps[ i ])}
                                             </div>
                                         </div>
                                     </div>

@@ -116,14 +116,13 @@ Finally, although it’s not a requirement, consider adding validation to ensure
 
 ## Grading Requirements
 
-This homework is graded based on the following criteria: 
+This homework is graded based on the following criteria:
 
 ### Deliverables: 15%
 
 * A sample HTML file generated using the application must be submitted.
 
 * Your GitHub repository containing your application code.
-
 
 ### Walkthrough Video: 32%
 
@@ -136,7 +135,6 @@ This homework is graded based on the following criteria:
 * The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
 
 * The walkthrough video must demonstrate a generated HTML file that matches the user input.
-
 
 ### Technical Acceptance Criteria: 40%
 

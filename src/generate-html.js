@@ -45,8 +45,6 @@ const generateHTML = (data) => {
 
     const generateEmployees = (emps) => {
         let html = '';
-        // let engineerHTML = `<span>Github: <a href="https://github.com/${ emp.github }">${ emp.github }</a></span>`;
-        // let internHTML = `<span>School: ${ emp.school }</span>`;
 
         const renderCorrespondingLine = ( emp ) => {
             if ( emp.getRole() === 'Engineer' ) {
@@ -56,8 +54,6 @@ const generateHTML = (data) => {
             }
         };
 
-        // const engineerBadge = `<img class="badge" src="./icons/engineer.png" />`;
-        // const internBadge = `<img class="badge" src="./icons/intern1.png" />`;
         const renderCorrespondingBadge = ( emp ) => {
             if ( emp.getRole() === 'Engineer' ) {
                 return `<img class="badge" src="./icons/engineer.png" />`;

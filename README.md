@@ -46,13 +46,13 @@ This project was completed as an individual assignment for The Ohio State Univer
 
 ![screenshot](./assets/images/team-profile.PNG)
 
-[GithubRepo](https://github.com/NAHco-code/Team-Profile-Generator.git)
+[GithubRepo](https://github.com/kathrynwilkinson/Team-Profile-Generator.git)
 
 ## Questions?
 
 Please feel free to contact me with any questions via email or LinkedIn.
 
-- Github: [NAHco-code](https://github.com/NAHco-code)
+- Github: [kathrynwilkinson](https://github.com/kathrynwilkinson)
 - LinkedIn: [kwilkinsonxx](https://www.linkedin.com/in/kwilkinsonxx/)
 - Email: [kathrynxwilk@gmail.com](kathrynxwilk@gmail.com)
 
